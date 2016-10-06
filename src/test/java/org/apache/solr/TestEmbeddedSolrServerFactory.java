@@ -43,7 +43,7 @@ public class TestEmbeddedSolrServerFactory {
     public static void setupClass() {
         try {
             String targetLocation = EmbeddedSolrServerFactory.class
-                    .getProtectionDomain().getCodeSource().getLocation().getFile();
+                    .getProtectionDomain().getCodeSource().getLocation().getFile() + "/..";
 
             String solrHome = targetLocation + "/solr";
 
